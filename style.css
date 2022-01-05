@@ -133,3 +133,84 @@ h3 {
     padding-right: 8rem;
   }
 }
+
+/* burgermenu */
+.toggle-btn {
+  display: none;
+}
+
+@media (min-width: 600px) {
+  ul {
+    list-style-type: none;
+    padding: 1rem;
+    margin-right: 2%;
+    text-align: right;
+  }
+
+  ul a:hover,
+  h1 a:hover,
+  h3 a:hover {
+    color: rgb(255, 0, 0);
+  }
+
+  a,
+  h1 {
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    padding: 1rem;
+  }
+  li {
+    display: inline;
+  }
+}
+
+@media (max-width: 600px) {
+  .toggle-btn {
+    background: transparent;
+    border: none;
+    display: block;
+    min-width: 44px;
+    min-height: 44px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    padding: 0.5rem;
+  }
+
+  nav {
+    display: none;
+  }
+
+  nav.shown {
+    border-inline-start-style: solid;
+    border-width: 3px;
+    border-inline-color: rgb(255, 0, 0);
+
+    display: flex;
+    flex: 1 1 100%;
+    margin-left: 5px;
+  }
+
+  nav ul {
+    display: flex;
+    flex-flow: column;
+  }
+
+  ul {
+    list-style-type: none;
+    padding: 0.5rem;
+  }
+
+  ul a:hover {
+    color: rgb(255, 0, 0);
+  }
+
+  a {
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+  }
+
+  li {
+    padding-bottom: 0.5rem;
+    padding-top: 0.5rem;
+  }
+}
