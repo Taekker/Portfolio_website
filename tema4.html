@@ -31,60 +31,103 @@
           <h2>Grundlæggende animation</h2>
           <div class="txt">
             <p>
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Alias
-              minus similique porro laboriosam consequuntur possimus reiciendis
-              soluta accusantium, consectetur sit eligendi eveniet officiis
-              asperiores obcaecati, reprehenderit eos ullam iste iusto. Lorem
-              ipsum dolor sit amet consectetur adipisicing elit. Vel alias
-              assumenda doloribus dolore porro aliquid error consectetur.
-              Consectetur ad laudantium ab corrupti fuga vitae ullam, vel
-              maiores. Nobis, saepe a. Lorem ipsum dolor sit amet consectetur
-              adipisicing elit. Dignissimos provident vitae fuga dolores dolore
-              commodi odio? Totam cum laudantium saepe harum? Aspernatur a
-              consectetur repellat voluptatem est earum quo ex?
+              På tema 4 - Grundlæggende animation, skulle jeg i gang med at lave
+              et spil.
+              <br />
+              <br />
+
+              Igen skulle jeg her igennem nogle faser, fra idé til design og
+              storytelling, videre til implementering af CSS animationer og
+              JavaScript. Jeg startede med at sketche i idéfasen, hvor jeg bruge
+              crazy 8's metoden til at komme på mit karakterdesign, jeg skulle
+              beslutte hvilken form og stil min karakter skulle have og hvad
+              spillet skulle kommunikere, fx at bløde former giver en mere
+              nuttet/sød karakter og stil sammen med kawaii stilen, var det det
+              jeg gerne ville gå med. Det kan man især se på min karakter, med
+              runde former og store øjne, og ikke mindst at der nærmest ingen
+              skarpe kanter er i mit spil.
+              <br />
+              Dette skulle så designes i illustrator, tegnes i vector og
+              eksporteres som SVG. Det var vigtigt at eksportere assets som SVG
+              da de skulle kunne skaleres og få tilføjet effekter.
+
+              <br />
+              <br />
+              Jeg har også lavet et aktivitetsprogram og et state-machine
+              diagram. Aktivitetsdiagrammet kan hurtigt og nemt vise hvad et
+              spil går ud på, eller hvad der sker når du gør noget.
+              <br />
+              State-machine diagrammet, viser også hvad man gennemgår i spillet,
+              men er mere detaljeret. Dette diagram har især været en hjælp til
+              mig når jeg skulle kode, da det viser mig hvilke "navne" jeg har
+              valgt at bruge i min kode, og præcis hvad jeg gerne vil have der
+              skal ske, fx når tiden er gået, går man til funktionen
+              "stopSpillet".
+
+              <br />
+              <br />
+              Funktioner, fx funktionen "stopSpillet", hører til i JS.
+              <br />
+              I mit spil har jeg brugt funktionen "stopSpillet" når man enten
+              har fået 15 point, tiden er gået eller man har mistet 3 liv.
+              Derfor starter jeg med at definere funktionen "stopSpillet", og
+              hvad der skal ske når denne funktion bliver kaldt. I mit spil,
+              fjerner funktionen alle eventlisteners, samt alt hvad der er under
+              mine containers og sprites. Når tiden i mit spil er gået, bliver
+              "stopSpillet" kaldt, og går derefter ned og kigger på mine
+              betingede erklæringer: if og else if. Her definerer jeg hvad der
+              skal ske efter endt spil, fx:
+              <br />
+              Hvis liv = 0, så kalder den en ny funktion "gameOver" <br />
+              hvis point = 15, så kalder den en ny funktion "levelComplete"
+              <br />
+              Hvis point = >15 så kalder den funktionen "gameOver".
             </p>
           </div>
         </div>
         <h3>Processen</h3>
         <div class="second_section">
           <div class="img">
-            <img src="noimage-3.jpg" alt="" />
+            <img src="picture1.png" alt="billede af spil sketch" />
           </div>
           <div class="img">
-            <img src="noimage-3.jpg" alt="" />
+            <img src="picture2.png" alt="billede af figur sketch" />
           </div>
           <div class="img">
-            <img src="noimage-3.jpg" alt="" />
+            <img src="picture3.png" alt="billede af figurstil og farver" />
           </div>
           <div class="img">
-            <img src="noimage-3.jpg" alt="" />
+            <img src="picture4.png" alt="billede af state-machine diagram" />
           </div>
           <div class="img">
-            <img src="noimage-3.jpg" alt="" />
+            <img src="picture5.png" alt="billede af firgurdesign" />
           </div>
           <div class="img">
-            <img src="noimage-3.jpg" alt="" />
+            <img
+              src="picture6.png"
+              alt="billede af mine assets og skærme i Illustrator"
+            />
           </div>
         </div>
         <div class="third_section">
           <h3>Resultatet</h3>
           <div class="txt">
             <p>
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Alias
-              minus similique porro laboriosam consequuntur possimus reiciendis
-              soluta accusantium, consectetur sit eligendi eveniet officiis
-              asperiores obcaecati, reprehenderit eos ullam iste iusto. Lorem
-              ipsum dolor sit amet consectetur adipisicing elit. Vel alias
-              assumenda doloribus dolore porro aliquid error consectetur.
-              Consectetur ad laudantium ab corrupti fuga vitae ullam, vel
-              maiores. Nobis, saepe a. Lorem ipsum dolor sit amet consectetur
-              adipisicing elit. Dignissimos provident vitae fuga dolores dolore
-              commodi odio? Totam cum laudantium saepe harum? Aspernatur a
-              consectetur repellat voluptatem est earum quo ex?
+              Til sidst i temaet, endte jeg ud med et færdigt spil med
+              startside, spilside og slutsider for hhv. Game Over og Level
+              Complete, samt både lyde, effekter og pop-up skærm.
+              <br />
+              Jeg fik også til opgave derefter at samle mit spil og hele min
+              process (inklusive assets, sketches og diagrammer) på en
+              hjemmeside.
+              <br />
             </p>
           </div>
           <div class="img">
-            <img src="noimage-3.jpg" alt="" />
+            <img
+              src="picture7.png"
+              alt="billede af mit spil og alle skærmene"
+            />
           </div>
         </div>
       </div>
