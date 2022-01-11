@@ -10,12 +10,57 @@ video {
 }
 
 .video {
-  text-align: center;
-  padding-bottom: 2rem;
+  position: relative;
+  padding-bottom: 56.25%;
+  padding-top: 30px;
+  height: 0;
+  overflow: hidden;
+}
+
+.video iframe,
+.video object,
+.video embed {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 80%;
+  padding-left: 3rem;
+  padding-right: 3rem;
 }
 
 a:hover {
   color: #db3729;
+}
+
+.text2 a:hover {
+  color: white;
+}
+
+#splash,
+#splash img {
+  object-fit: cover;
+  display: grid;
+  height: 100vh;
+}
+
+.text1 {
+  place-self: center;
+  position: absolute;
+  border-radius: 15px;
+  background-color: #ffffff;
+  color: rgb(255, 255, 255);
+  margin-top: -40%;
+  font-size: 1rem;
+}
+.text2 {
+  place-self: center;
+  position: absolute;
+  border-radius: 15px;
+  background-color: #db3729;
+  color: rgb(255, 255, 255);
+  margin-top: 40%;
+  font-size: 1rem;
 }
 
 a,
@@ -23,30 +68,6 @@ h1 {
   color: rgb(0, 0, 0);
   text-decoration: none;
   padding: 1rem;
-}
-
-.img1 {
-  background-image: url(Artboard_3.svg);
-  width: 100%;
-  position: absolute;
-  height: 50%;
-}
-
-.img2 {
-  background-image: url(Artboard_33.svg);
-  width: 100%;
-  position: absolute;
-  height: 50%;
-  top: 50%;
-}
-
-.img1 h1,
-.img2 h1 {
-  width: 100%;
-  height: 100%;
-  justify-content: center;
-  align-items: center;
-  display: flex;
 }
 
 #om .img {
@@ -66,11 +87,6 @@ h1 {
   text-align: center;
 }
 
-h3 {
-  text-align: center;
-  font-family: "Nanum Gothic Coding", monospace;
-}
-
 .first_section h2 {
   padding-bottom: 2rem;
 }
@@ -78,10 +94,28 @@ h3 {
 .third_section h3 {
   padding: 2rem;
 }
+.third_section a {
+  color: red;
+}
+
+.third_section a:hover {
+  color: black;
+}
+p,
+a {
+  font-family: "DM Sans", sans-serif;
+  font-size: 0.9rem;
+}
+
+h3 {
+  text-align: center;
+  font-family: "Nanum Gothic Coding", monospace;
+}
 h2 {
   justify-content: center;
   display: flex;
-  font-size: 2rem;
+  font-size: 1.7rem;
+  padding-top: 1rem;
   font-family: "Nanum Gothic Coding", monospace;
 }
 
@@ -119,6 +153,32 @@ h1 {
 }
 
 @media (min-width: 750px) {
+  .video iframe {
+    padding-left: 8rem;
+    padding-right: 8rem;
+    height: 70%;
+  }
+  .text1 {
+    place-self: center left;
+    position: absolute;
+    border-radius: 15px;
+    background-color: #ffffff;
+    color: rgb(255, 255, 255);
+    margin-top: 5%;
+    margin-left: 30%;
+    font-size: 1rem;
+  }
+  .text2 {
+    place-self: center right;
+    position: absolute;
+    border-radius: 15px;
+    background-color: #db3729;
+    color: rgb(255, 255, 255);
+    margin-top: 5%;
+    margin-right: 30%;
+    font-size: 1rem;
+  }
+
   #portfolio .section_wrapper {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -130,24 +190,6 @@ h1 {
 
   #portfolio img {
     padding: 0;
-  }
-  .img1 {
-    background-image: url(Artboard_33.svg);
-    background-repeat: no-repeat;
-    width: 50%;
-    position: absolute;
-    left: 0px;
-    height: 100%;
-  }
-
-  .img2 {
-    background-image: url(Artboard_3.svg);
-    background-repeat: no-repeat;
-    width: 50%;
-    position: absolute;
-    right: 0px;
-    height: 100%;
-    top: 0%;
   }
 
   #om h2 {
@@ -197,6 +239,8 @@ h1 {
   #om .img {
     order: 2;
     max-width: 350px;
+    border-left: #db3729;
+    border-left-style: solid;
   }
 
   #om h2 {
